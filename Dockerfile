@@ -1,1 +1,2 @@
-FROM ubuntu
+FROM ubunt
+WORKDIR /home u
