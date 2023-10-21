@@ -1,6 +1,16 @@
-cd path/to/your/folde
+cd path/to/your/folder
 git init
 git config --global user.name "Your Name"
 git config --global user.email "your.email@example.com"
 git add filename
-git commit -m "Initial commit"r
+git commit -m "Initial commit"
+
+#add remote origin 
+git remote add origin [https://github.com/username/repository.git]
+
+git config pull.rebase false  # merge (the default strategy)
+git config pull.rebase true   # rebase
+git config pull.ff only       # fast-forward only
+
+#for ssh authentication
+git remote set-url origin  [ git@github.com:username/repo.git] 
